@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:animateLayoutChanges="false"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#FFFF8800"
+            android:gravity="center"
+            android:text="Enter Verification code sent to you!"
+            android:textColor="#181410"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_otp"
+            android:layout_width="358dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Code"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="127dp">
+
+            <Button
+                android:id="@+id/btn_verify"
+                android:layout_width="155dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="60dp"
+                android:text="Verify" />
+
+            <Button
+                android:id="@+id/btn_cancle"
+                android:layout_width="155dp"
+                android:layout_height="57dp"
+                android:layout_marginTop="60dp"
+                android:text="Cancle" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
